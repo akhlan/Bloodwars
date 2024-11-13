@@ -6,8 +6,8 @@
 // @description  Ajoute des réponses aux missions spécifiques sur la page BloodWars
 // @copyright    2024, Pok Marvel
 // @license      GPL version 3 ou suivantes; http://www.gnu.org/copyleft/gpl.html
-// @homepageURL  https://github.com/Ecilam/BloodWarsAnalyseRC
-// @supportURL   https://github.com/Ecilam/BloodWarsAnalyseRC/issues
+// @homepageURL  https://github.com/Akhlan/BloodWarsAideMission
+// @supportURL   https://github.com/Akhlan/BloodWarsAideMission/issues
 // @match        https://r1.bloodwars.net/*
 // @match        https://r2.bloodwars.net/*
 // @match        https://r3.bloodwars.net/*
@@ -108,3 +108,4 @@
         });
     });
 })();
+
