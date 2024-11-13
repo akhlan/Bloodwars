@@ -2,7 +2,7 @@
 // @name         BloodWars - Explication des missions Moria S9
 // @author       Pok Marvel
 // @namespace    http://tampermonkey.net/
-// @version      1.6
+// @version      1.7
 // @description  Ajoute des réponses aux missions spécifiques sur la page BloodWars (Moria S9)
 // @copyright    13.11.2024, Pok Marvel
 // @license      GPL version 3 ou suivantes; http://www.gnu.org/copyleft/gpl.html
@@ -64,19 +64,19 @@
         },
         {
             question: "L’argent et le trafique d’armes c’est les facteurs, qui te permettront de survivre. Pour stabiliser ta situation développe La Maison Close jusqu’au niveau 8 et l’Arrêt Taxi jusqu’au niveau 2.",
-            reponse: "Pour la valider : Construire le niveau 10 ou supérieur de la Maison Close et le Marché Noir. Si l`un des deux est déjà construit, il suffit de construire l`autre. Si les deux sont déjà construits, il suffit de monter le niveau de l`un d`eux."
+            reponse: "Pour la valider : Construire le niveau 10 ou supérieur de la Maison Close et du Marché Noir. Si l`un des deux est déjà construit, il suffit de construire l`autre. Si les deux sont déjà construits, il suffit de monter le niveau de l`un d`eux."
         },
         {
             question: "Tu es né pour avancer. Prouve-le en joignant la IV zone.",
-            reponse: "Pour la valider : Passer en Zone 4. Pour ce faire, vous devez avoir atteint le niveau 20 pour pouvoir passer en Z4."
+            reponse: "Pour la valider : Passer en Zone 4. Pour ce faire, vous devez avoir atteint le niveau 20."
         },
         {
             question: "Augmente ton pouvoir dans le monde de l’obscurité en recrutant un vassal (tu peux le faire en utilisant le lien de reference qui se trouve dans la salle du trone).",
-            reponse: "Pour la valider : Demander à quelqu`un de s`inscrire sur le jeu en utilisant le lien de référence ou s'inscrire sur un autre serveur à partir de ce même lien."
+            reponse: "Pour la valider : Demander à quelqu`un de s`inscrire sur le jeu en utilisant le lien de référence ou de s'inscrire sur un autre serveur à partir de ce même lien."
         },
         //Missions à accomplir en Zone 4
         {
-            question: "Il y a quelques solutions pour acquérir du respect dans le monde des morts-vivants. L’une d’elles c’est de posséder de puissants artefacts. Accomplis 4 Pèlerinages vers l’Inconnu.",
+            question: "Il y a quelques solutions pour acquérir du respect dans le monde des morts-vivants. L’une d’elles c’est de posséder de puissants artefacts. Accomplis 4 pèlerinages vers l’Inconnu.",
             reponse: "Pour la valider : Réussir votre 4ème pèlerinage en Z4. Dans le cas où vous auriez déjà complété ces 4 pèlerinages en Z5, il suffit de réussir un seul pèlerinage en Z4."
         },
         {
@@ -85,7 +85,7 @@
         },
         {
             question: "Le chefs d’une meute de loups-garous a juré de venger la bande que tu as achevé sur ton quartier. Tu trouvera sa cachette quelque part loin de la Cité si tu veux terminer sa misérable existence.",
-            reponse: "Pour la valider : Vaincre des monstres pendant une quête dans Une quête lointaine."
+            reponse: "Pour la valider : Vaincre des monstres pendant une quête dans une quête lointaine."
         },
         {
             question: "Tu as remarqué une chaîne de contaminations d’une étrange maladie parmi la population de ton quartier. Tes espions suggèrent de chercher la cause dans les environs de La Cité.",
@@ -199,7 +199,7 @@
         },
         {
             question: "Conquiers les cours et les esprits de la foule. Acquis 50 points de charisme",
-            reponse: "Pour la valider : Monter le Charisme à 50 ou plus."
+            reponse: "Pour la valider : Monter le charisme à 50 ou plus."
         },
         {
             question: "L’Ordre de Saint Benoît a envoyé un assassin à ta trousse. Trouve le dans les environs de La Cité.",
@@ -207,7 +207,7 @@
         },
         {
             question: "Deviens le maître des plus obscures coins de La Cité. Acquis 55 points de réputation.",
-            reponse: "Pour la valider : Monter la Réputation à 55 ou plus."
+            reponse: "Pour la valider : Monter la réputation à 55 ou plus."
         },
         {
             question: "Ton quartier a été assailli par les paladins de l’Ordre de Saint Benoît. Prépare-toi à l’ultime bataille entre les deux forces opposées...",
