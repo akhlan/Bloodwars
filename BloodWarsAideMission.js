@@ -246,7 +246,7 @@
             reponse: "Pour la valider : Vaincre 2 monstres pendant une quête dans un pèlerinage vers l'inconnu."
         },
         {
-            question: "Deviens Le Maître / La Maîtresse de la Cité. Là et maintenant.",
+            question: "Deviens Le Maître de la Cité. Là et maintenant.",
             reponse: "Pour la valider : Passer en zone 1."
         },
         //Missions à accomplir en Zone 1
