@@ -2,7 +2,7 @@
 // @name         BloodWars - Explication des missions Moria S9
 // @author       Pok Marvel
 // @namespace    http://tampermonkey.net/
-// @version      1.7
+// @version      1.8
 // @description  Ajoute des réponses aux missions spécifiques sur la page BloodWars (Moria S9)
 // @copyright    13.11.2024, Pok Marvel
 // @license      GPL version 3 ou suivantes; http://www.gnu.org/copyleft/gpl.html
