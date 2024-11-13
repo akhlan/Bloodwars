@@ -2,7 +2,7 @@
 // @name         BloodWars - Explication des missions Moria S9
 // @author       Pok Marvel
 // @namespace    http://tampermonkey.net/
-// @version      1.5
+// @version      1.6
 // @description  Ajoute des réponses aux missions spécifiques sur la page BloodWars (Moria S9)
 // @copyright    13.11.2024, Pok Marvel
 // @license      GPL version 3 ou suivantes; http://www.gnu.org/copyleft/gpl.html
@@ -20,6 +20,8 @@
 // @match        https://r7.fr.bloodwars.net/*
 // @match        https://r8.fr.bloodwars.net/*
 // @grant        none
+// @downloadURL https://update.greasyfork.org/scripts/517072/BloodWars%20-%20Explication%20des%20missions%20Moria%20S9.user.js
+// @updateURL https://update.greasyfork.org/scripts/517072/BloodWars%20-%20Explication%20des%20missions%20Moria%20S9.meta.js
 // ==/UserScript==
 
 (function() {
@@ -207,7 +209,7 @@
             question: "Deviens le maître des plus obscures coins de La Cité. Acquis 55 points de réputation.",
             reponse: "Pour la valider : Monter la Réputation à 55 ou plus."
         },
-	{
+        {
             question: "Ton quartier a été assailli par les paladins de l’Ordre de Saint Benoît. Prépare-toi à l’ultime bataille entre les deux forces opposées...",
             reponse: "Pour la valider : Lancer un siège sur son propre quartier. Petite remarque: tous les ennemis utilisent l`arcane absorption de force."
         },
@@ -240,29 +242,29 @@
             reponse: "Pour la valider : Lancer un siège sur son propre quartier. Petite remarque: tous les ennemis utilisent l`arcane absorption de force."
         },
         {
-            question: "Le Grand Maître de l`Ordre a échappé à la mort pendant la dernière bataille. Tu le trouvera quelque part dans l`impitoyable désert. Vas-y et offre-lui l`opportunité de rencontrer son dieu...",
+            question: "Le Grand Maître de l’Ordre a échappé à la mort pendant la dernière bataille. Tu le trouvera quelque part dans l’impitoyable désert. Vas-y et offre-lui l’opportunité de rencontrer son dieu...",
             reponse: "Pour la valider : Vaincre 2 monstres pendant une quête dans un pèlerinage vers l'inconnu."
         },
         {
             question: "Deviens Le Maître / La Maîtresse de la Cité. Là et maintenant.",
             reponse: "Pour la valider : Passer en zone 1."
-//        },
-		//Missions à accomplir en Zone 1
-//        {
-//           question: "Atteints le 89-ième niveau d`expérience.",
-//            reponse: "Pour la valider : Gagner un niveau qui fait atteindre le niveau 89 ou supérieur."
-//        },
-//        {
-//            question: "Le prestige entre les vampires, ce n’est pas seulement la richesse et le pouvoir. Seul un grand guerrier inspire le respect. Gagne 15 embuscades consécutives. Les défenses ne comptent pas. Les attaques réussies:",
-//            reponse: "Pour la valider : Réussir 15 attaques consécutives."
-//        },
-//        {
-//            question: "Malgré les avertissements donnés par tes conseillers, de temps en temps tu te promènes seul aux alentours de la ville. Tu te remémore les jours où tu étais un novice dans le monde des vampires, un novice qui rêvait de gloire et de pouvoir.",
-//            reponse: "Pour la valider : Vaincre un monstre en un contre un pendant une quête dans Les environs de la Cité."
-//        },
-//        {
-//           question: "Toutes les sombres et mystérieuses histoires sont soudain devenues claires. À la porte de la ville une armée de puissants sorciers n`ayant qu`un but, la destruction totale de la ville et la \"libération\" des esclaves opprimés par les vampires, s’apprêtait à donner l’assaut. Le temps est venu pour tous les vampires de se liguer contre l`ennemi commun.",
-//            reponse: "Pour la valider : Lancer un siège sur son propre quartier. Petite remarque: les ennemis sont très nombreux."
+        },
+        //Missions à accomplir en Zone 1
+        {
+            question: "Le prestige entre les vampires, ce n’est pas seulement la richesse et le pouvoir. Seul un grand guerrier inspire le respect. Gagne 15 embuscades consécutives. Les défenses ne comptent pas.",
+            reponse: "Pour la valider : Réussir 15 attaques consécutives."
+        },
+        {
+            question: "Malgré les avertissements donnés par tes conseillers, de temps en temps tu te promènes seul aux alentours de la ville. Tu te remémore les jours où tu étais un novice dans le monde des vampires, un novice qui rêvait de gloire et de pouvoir.",
+            reponse: "Pour la valider : Vaincre un monstre en un contre un pendant une quête dans Les environs de la Cité."
+        },
+        {
+           question: "Atteints le 110-ème niveau d’expérience.",
+            reponse: "Pour la valider : Gagner un niveau qui fait atteindre le niveau 89 ou supérieur."
+        },
+        {
+           question: "Toutes les sombres et mystérieuses histoires sont soudain devenues claires. À la porte de la ville une armée de puissants sorciers n’ayant qu’un but, la destruction totale de la ville et la \"libération\" des esclaves opprimés par les vampires, s’apprêtait à donner l’assaut. Le temps est venu pour tous les vampires de se liguer contre l’ennemi commun.",
+           reponse: "Pour la valider : Lancer un siège sur son propre quartier. Petite remarque: les ennemis sont très nombreux."
         }
     ];
 
