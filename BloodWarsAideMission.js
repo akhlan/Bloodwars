@@ -2,9 +2,9 @@
 // @name         BloodWars - Réponses aux missions
 // @author       Pok Marvel
 // @namespace    http://tampermonkey.net/
-// @version      13.11.2024-1.5
+// @version      1.5
 // @description  Ajoute des réponses aux missions spécifiques sur la page BloodWars
-// @copyright    2024, Pok Marvel
+// @copyright    13.11.2024, Pok Marvel
 // @license      GPL version 3 ou suivantes; http://www.gnu.org/copyleft/gpl.html
 // @homepageURL  https://github.com/akhlan/Bloodwars/blob/main/BloodWarsAideMission.js
 // @supportURL   https://github.com/Akhlan/BloodWarsAideMission/issues
