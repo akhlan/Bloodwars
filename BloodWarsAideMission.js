@@ -207,6 +207,10 @@
             question: "Deviens le maître des plus obscures coins de La Cité. Acquis 55 points de réputation.",
             reponse: "Pour la valider : Monter la Réputation à 55 ou plus."
         },
+	{
+            question: "Ton quartier a été assailli par les paladins de l’Ordre de Saint Benoît. Prépare-toi à l’ultime bataille entre les deux forces opposées...",
+            reponse: "Pour la valider : Lancer un siège sur son propre quartier. Petite remarque: tous les ennemis utilisent l`arcane absorption de force."
+        },
         {
             question: "Le Seigneur de l’Obscurité veut que dans sa Cathédrale on ne manque pas de sang. Etant un membre de Cercle Intérieur tu es obligé de faire un sacrifice. Accumule 800 000 litres de sang et sacrifie 10% de cette réserve au Seigneur.",
             reponse: "Pour la valider : Cliquer sur «Cliquez ici pour donnez les ressources» une fois les 800 000 litres de sang sur soi."
