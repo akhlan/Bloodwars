@@ -260,7 +260,7 @@
         },
         {
            question: "Atteints le 110-ième niveau d’expérience.",
-            reponse: "Pour la valider : Gagner un niveau qui fait atteindre le niveau 89 ou supérieur."
+            reponse: "Pour la valider : Gagner un niveau qui fait atteindre le niveau 110 ou supérieur."
         },
         {
            question: "Toutes les sombres et mystérieuses histoires sont soudain devenues claires. À la porte de la ville une armée de puissants sorciers n’ayant qu’un but, la destruction totale de la ville et la \"libération\" des esclaves opprimés par les vampires, s’apprêtait à donner l’assaut. Le temps est venu pour tous les vampires de se liguer contre l’ennemi commun.",
