@@ -2,7 +2,7 @@
 // @name         BloodWars - Explication des missions Moria S9
 // @author       Pok Marvel
 // @namespace    http://tampermonkey.net/
-// @version      1.9
+// @version      0.1
 // @description  Ajoute des réponses aux missions spécifiques sur la page BloodWars (Moria S9)
 // @copyright    13.11.2024, Pok Marvel
 // @license      GPL version 3 ou suivantes; http://www.gnu.org/copyleft/gpl.html
@@ -76,7 +76,7 @@
         },
         //Missions à accomplir en Zone 4
         {
-            question: "Il y a quelques solutions pour acquérir du respect dans le monde des morts-vivants. L’une d’elles c’est de posséder de puissants artefacts. Accomplis 4 pèlerinages vers l’Inconnu.",
+            question: "Il y a quelques solutions pour acquérir du respect dans le monde des morts-vivants. L’une d’elles c’est de posséder de puissants artefacts. Accomplis 4 Pèlerinages vers l’Inconnu.",
             reponse: "Pour la valider : Réussir votre 4ème pèlerinage en Z4. Dans le cas où vous auriez déjà complété ces 4 pèlerinages en Z5, il suffit de réussir un seul pèlerinage en Z4."
         },
         {
