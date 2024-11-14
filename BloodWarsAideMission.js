@@ -2,7 +2,7 @@
 // @name         BloodWars - Explication des missions Moria S9
 // @author       Pok Marvel
 // @namespace    http://tampermonkey.net/
-// @version      1.8
+// @version      1.9
 // @description  Ajoute des réponses aux missions spécifiques sur la page BloodWars (Moria S9)
 // @copyright    13.11.2024, Pok Marvel
 // @license      GPL version 3 ou suivantes; http://www.gnu.org/copyleft/gpl.html
@@ -259,7 +259,7 @@
             reponse: "Pour la valider : Vaincre un monstre en un contre un pendant une quête dans Les environs de la Cité."
         },
         {
-           question: "Atteints le 110-ème niveau d’expérience.",
+           question: "Atteints le 110-ième niveau d’expérience.",
             reponse: "Pour la valider : Gagner un niveau qui fait atteindre le niveau 89 ou supérieur."
         },
         {
