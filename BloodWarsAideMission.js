@@ -2,7 +2,7 @@
 // @name         BloodWars - Explication des missions Moria S9
 // @author       Pok Marvel
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Ajoute des réponses aux missions spécifiques sur la page BloodWars (Moria S9)
 // @copyright    13.11.2024, Pok Marvel
 // @license      GPL version 3 ou suivantes; http://www.gnu.org/copyleft/gpl.html
@@ -18,7 +18,8 @@
 // @match        https://r3.fr.bloodwars.net/*
 // @match        https://r4.fr.bloodwars.net/*
 // @match        https://r7.fr.bloodwars.net/*
-// @match        https://r8.fr.bloodwars.net/*
+// @match        https://r8.fr.bloodwars.net/?a=settings&do=acc
+// @match        https://r8.fr.bloodwars.net/?a=tasks&do=zone
 // @grant        none
 // @downloadURL https://update.greasyfork.org/scripts/517072/BloodWars%20-%20Explication%20des%20missions%20Moria%20S9.user.js
 // @updateURL https://update.greasyfork.org/scripts/517072/BloodWars%20-%20Explication%20des%20missions%20Moria%20S9.meta.js
@@ -268,26 +269,85 @@
         }
     ];
 
+    const settingsPageUrl = "https://r8.fr.bloodwars.net/?a=settings&do=acc";
+    const currentPage = window.location.href;
+
+    // Fonction pour récupérer le thème actif depuis la page des Préférences
+    function extractThemeFromPreferences() {
+        const checkedInput = document.querySelector('input[name="layout"]:checked'); // Trouve l'input radio sélectionné
+        if (checkedInput) {
+            const themeLabel = checkedInput.nextElementSibling; // Le label associé
+            if (themeLabel) {
+                const themeName = themeLabel.textContent.trim(); // Récupère le texte du label
+                const storedTheme = localStorage.getItem('bw_activeTheme');
+
+                // Si le thème actuel est différent de celui enregistré, on met à jour localStorage
+                if (storedTheme !== themeName) {
+                    localStorage.setItem('bw_activeTheme', themeName); // Sauvegarde dans localStorage
+                    alert(`Thème mis à jour : ${themeName}`);
+                } else {
+                    console.log("Le thème actuel est déjà celui enregistré.");
+                }
+            } else {
+                alert("Impossible de récupérer le nom du thème. Réessayez.");
+            }
+        } else {
+            alert("Aucun thème sélectionné trouvé sur cette page.");
+        }
+    }
+
+    // Fonction pour définir var_theme en fonction du thème actif
+    function getVarTheme(theme) {
+        let var_theme;
+        switch (theme) {
+            case "Classique":
+            case "Nanorobot":
+            case "C2k7":
+            case "Gothic":
+            case "Bloodsoul":
+            case "Lite":
+                var_theme = "td"; // Pour ces thèmes
+                break;
+            case "Awakening":
+                var_theme = ".tasks_tasksDesc"; // Pour le thème Awakening
+                break;
+            default:
+                var_theme = "td"; // Valeur par défaut
+                break;
+        }
+        return var_theme;
+    }
+
     // Fonction pour insérer les réponses sous les questions correspondantes
     questionReponses.forEach(item => {
-        const allElements = document.querySelectorAll(".tasks_tasksDesc");
+        const activeTheme = localStorage.getItem('bw_activeTheme');
+        if (!activeTheme) {
+            alert("Le thème n'est pas configuré. Veuillez vous rendre sur la page des Préférences");
+        } else {
+            const var_theme = getVarTheme(activeTheme);
+            const allElements = document.querySelectorAll(var_theme);
+            allElements.forEach(element => {
+                // Si l'élément contient la question, on insère la réponse
+                if (element.textContent.includes(item.question)) {
+                    // Créer un élément pour la réponse
+                    const reponseElement = document.createElement('div');
+                    reponseElement.style.marginTop = '10px'; // Un peu d'espace avant la réponse
 
-        allElements.forEach(element => {
-            // Si l'élément contient la question, on insère la réponse
-            if (element.textContent.includes(item.question)) {
-                // Créer un élément pour la réponse
-                const reponseElement = document.createElement('div');
-                reponseElement.style.marginTop = '10px'; // Un peu d'espace avant la réponse
+                    // Modifier "Pour la valider : " en rouge
+                    const reponseText = item.reponse.replace("Pour la valider : ", "<span style='color: red;'>Pour la valider : </span>");
 
-                // Modifier "Pour la valider : " en rouge
-                const reponseText = item.reponse.replace("Pour la valider : ", "<span style='color: red;'>Pour la valider : </span>");
+                    // Insérer la réponse avec le texte en rouge pour la partie "Pour la valider :"
+                    reponseElement.innerHTML = reponseText;
 
-                // Insérer la réponse avec le texte en rouge pour la partie "Pour la valider :"
-                reponseElement.innerHTML = reponseText;
-
-                // Ajouter la réponse juste après la question
-                element.appendChild(reponseElement);
-            }
-        });
+                    // Ajouter la réponse juste après la question
+                    element.appendChild(reponseElement);
+                }
+            });
+        }
     });
+
+    // Si on est sur la page des Préférences
+    if (currentPage === settingsPageUrl) {
+        extractThemeFromPreferences();
+    }
 })();
