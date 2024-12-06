@@ -2,7 +2,7 @@
 // @name         BloodWars - Explication des missions Moria S9
 // @author       Pok Marvel
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  Ajoute des réponses aux missions spécifiques sur la page BloodWars (Moria S9)
 // @copyright    13.11.2024, Pok Marvel
 // @license      GPL version 3 ou suivantes; http://www.gnu.org/copyleft/gpl.html
@@ -125,13 +125,13 @@
             reponse: "Pour la valider : Réussir une quête lointaine avec comme test ??? qui est une moyenne entre votre intelligence et votre agilité."
         },
         {
-            question: "Fait preuve de courage. Seulement cela attirera sous ton drapeau les meilleurs chasseurs.",
+	    question: "Fait preuve de courage. Seulement cela attirera sous ton drapeau les meilleurs chasseurs.",
             reponse: "Pour la valider : Réussir une quête lointaine."
         },
-//        {
-//            question: "Les corps massacrés sans les têtes, sans les entrailles. Qu`est-ce qu`il se passe? Envoie les espions vers ton quartier et verifie qui est derriere ça. (~4200 pdp de récompense)",
-//            reponse: "Pour la valider : Espionner son propre quartier. Quel que soit le stuff utilisé et le nombre d`espions envoyés, il y aura toujours 1% de chance de réussir cet espionnage. Cette mission mettra votre patience à rude épreuve car l'espion a une fâcheuse tendance à se suicider..."
-//        },
+        {
+	    question: "Les corps massacrés sans les têtes, sans les entrailles. Qu’est-ce qu’il se passe? Envoie les espions vers ton quartier et verifie qui est derriere ça.",
+	    reponse: "Pour la valider : Espionner son propre quartier. Quel que soit le stuff utilisé et le nombre d`espions envoyés, il y aura toujours 1% de chance de réussir cet espionnage. Cette mission mettra votre patience à rude épreuve car l'espion a une fâcheuse tendance à se suicider..."
+        },
 //        {
 //            question: "Les informations obtenues d`un jeune homme vous dirigent vers une auberge au dehors de la ville. Avec la groupe des autres vampires vérifiez ce qui se passe. (~ 18 300 pdp de récompense + 200 PDE + 1× Rune de Terre tirée au sort de niveau 1)",
 //            reponse: "Pour la valider : Lancer un siège sur son propre quartier. Attention, il y aura beaucoup d'adversaires: environ 25."
