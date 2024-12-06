@@ -122,10 +122,10 @@
 	    question: "Les corps massacrés sans les têtes, sans les entrailles. Qu’est-ce qu’il se passe? Envoie les espions vers ton quartier et verifie qui est derriere ça.",
 	    reponse: "Pour la valider : Espionner son propre quartier. Quel que soit le stuff utilisé et le nombre d`espions envoyés, il y aura toujours 1% de chance de réussir cet espionnage. Cette mission mettra votre patience à rude épreuve car l'espion a une fâcheuse tendance à se suicider..."
         },
-//        {
-//            question: "Les informations obtenues d`un jeune homme vous dirigent vers une auberge au dehors de la ville. Avec la groupe des autres vampires vérifiez ce qui se passe. (~ 18 300 pdp de récompense + 200 PDE + 1× Rune de Terre tirée au sort de niveau 1)",
-//            reponse: "Pour la valider : Lancer un siège sur son propre quartier. Attention, il y aura beaucoup d'adversaires: environ 25."
-//        },
+        {
+            question: "Les informations obtenues d’un jeune homme vous dirigent vers une auberge au dehors de la ville. Avec la groupe des autres vampires vérifiez ce qui se passe.",
+            reponse: "Pour la valider : Lancer un siège sur son propre quartier. Attention, il y aura beaucoup d'adversaires: environ 25."
+        },
 		//Missions à accomplir en Zone 3
         {
             question: "Accomplis tous les Pèlerinages vers L’Inconnu.",
