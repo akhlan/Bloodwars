@@ -4,7 +4,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.4
 // @description  Ajoute des réponses aux missions spécifiques sur la page BloodWars (Moria S9)
-// @copyright    13.11.2024, Pok Marvel
+// @copyright    06.12.2024, Pok Marvel
 // @license      GPL version 3 ou suivantes; http://www.gnu.org/copyleft/gpl.html
 // @homepageURL  https://github.com/akhlan/Bloodwars/blob/main/BloodWarsAideMission.js
 // @supportURL   https://github.com/Akhlan/BloodWarsAideMission/issues
