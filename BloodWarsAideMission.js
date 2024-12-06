@@ -8,16 +8,6 @@
 // @license      GPL version 3 ou suivantes; http://www.gnu.org/copyleft/gpl.html
 // @homepageURL  https://github.com/akhlan/Bloodwars/blob/main/BloodWarsAideMission.js
 // @supportURL   https://github.com/Akhlan/BloodWarsAideMission/issues
-// @match        https://r1.bloodwars.net/*
-// @match        https://r2.bloodwars.net/*
-// @match        https://r3.bloodwars.net/*
-// @match        https://r4.bloodwars.net/*
-// @match        https://r1.fr.bloodwars.net/*
-// @match        https://r1.fr.bloodwars.net/*
-// @match        https://r2.fr.bloodwars.net/*
-// @match        https://r3.fr.bloodwars.net/*
-// @match        https://r4.fr.bloodwars.net/*
-// @match        https://r7.fr.bloodwars.net/*
 // @match        https://r8.fr.bloodwars.net/?a=settings&do=acc
 // @match        https://r8.fr.bloodwars.net/?a=tasks&do=zone
 // @grant        none
