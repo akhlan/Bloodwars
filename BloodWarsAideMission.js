@@ -2,21 +2,37 @@
 // @name         BloodWars - Explication des missions Moria S9
 // @author       Pok Marvel
 // @namespace    http://tampermonkey.net/
-// @version      0.4
-// @description  Ajoute des réponses aux missions spécifiques sur la page BloodWars (Moria S9)
+// @version      1.0
+// @description  Ajoute des réponses aux missions spécifiques sur les pages BloodWars (Moria S9, r8 et r3)
 // @copyright    06.12.2024, Pok Marvel
 // @license      GPL version 3 ou suivantes; http://www.gnu.org/copyleft/gpl.html
 // @homepageURL  https://github.com/akhlan/Bloodwars/blob/main/BloodWarsAideMission.js
 // @supportURL   https://github.com/Akhlan/BloodWarsAideMission/issues
 // @match        https://r8.fr.bloodwars.net/?a=settings&do=acc
 // @match        https://r8.fr.bloodwars.net/?a=tasks&do=zone
+// @match        https://r3.fr.bloodwars.net/?a=settings&do=acc
+// @match        https://r3.fr.bloodwars.net/?a=tasks&do=zone
 // @grant        none
-// @downloadURL https://update.greasyfork.org/scripts/517072/BloodWars%20-%20Explication%20des%20missions%20Moria%20S9.user.js
-// @updateURL https://update.greasyfork.org/scripts/517072/BloodWars%20-%20Explication%20des%20missions%20Moria%20S9.meta.js
+// @downloadURL  https://update.greasyfork.org/scripts/517072/BloodWars%20-%20Explication%20des%20missions%20Moria%20S9.user.js
+// @updateURL    https://update.greasyfork.org/scripts/517072/BloodWars%20-%20Explication%20des%20missions%20Moria%20S9.meta.js
 // ==/UserScript==
 
-(function() {
+(function () {
     'use strict';
+
+    // Liste des URLs des pages de préférences
+    const settingsPageUrls = [
+        "https://r8.fr.bloodwars.net/?a=settings&do=acc",
+        "https://r3.fr.bloodwars.net/?a=settings&do=acc"
+    ];
+
+    // URL actuelle
+    const currentPage = window.location.href;
+
+    // Fonction pour savoir si la page actuelle est une page de préférences
+    function isSettingsPage(url) {
+        return settingsPageUrls.includes(url);
+    }
 
     // Liste des questions et réponses
     const questionReponses = [
@@ -250,6 +266,10 @@
             reponse: "Pour la valider : Vaincre un monstre en un contre un pendant une quête dans Les environs de la Cité."
         },
         {
+           question: "Atteints le 89-ième niveau d’expérience.",
+            reponse: "Pour la valider : Gagner un niveau qui fait atteindre le niveau 110 ou supérieur."
+        },
+        {
            question: "Atteints le 110-ième niveau d’expérience.",
             reponse: "Pour la valider : Gagner un niveau qui fait atteindre le niveau 110 ou supérieur."
         },
@@ -258,9 +278,6 @@
            reponse: "Pour la valider : Lancer un siège sur son propre quartier. Petite remarque: les ennemis sont très nombreux."
         }
     ];
-
-    const settingsPageUrl = "https://r8.fr.bloodwars.net/?a=settings&do=acc";
-    const currentPage = window.location.href;
 
     // Fonction pour récupérer le thème actif depuis la page des Préférences
     function extractThemeFromPreferences() {
@@ -312,32 +329,30 @@
     questionReponses.forEach(item => {
         const activeTheme = localStorage.getItem('bw_activeTheme');
         if (!activeTheme) {
-            alert("Le thème n'est pas configuré. Veuillez vous rendre sur la page des Préférences");
+            // Affiche une seule popup si elle n'a pas déjà été montrée lors du chargement
+            if (!sessionStorage.getItem('bw_themeWarningShown')) {
+                alert("Le thème n'est pas configuré. Veuillez vous rendre sur la page des Préférences.");
+                sessionStorage.setItem('bw_themeWarningShown', true);
+            }
         } else {
             const var_theme = getVarTheme(activeTheme);
             const allElements = document.querySelectorAll(var_theme);
             allElements.forEach(element => {
                 // Si l'élément contient la question, on insère la réponse
                 if (element.textContent.includes(item.question)) {
-                    // Créer un élément pour la réponse
                     const reponseElement = document.createElement('div');
                     reponseElement.style.marginTop = '10px'; // Un peu d'espace avant la réponse
-
-                    // Modifier "Pour la valider : " en rouge
-                    const reponseText = item.reponse.replace("Pour la valider : ", "<span style='color: red;'>Pour la valider : </span>");
-
-                    // Insérer la réponse avec le texte en rouge pour la partie "Pour la valider :"
-                    reponseElement.innerHTML = reponseText;
-
-                    // Ajouter la réponse juste après la question
+                    reponseElement.style.color = 'red'; // Texte en rouge pour plus de visibilité
+                    reponseElement.textContent = item.reponse;
                     element.appendChild(reponseElement);
                 }
             });
         }
     });
 
-    // Si on est sur la page des Préférences
-    if (currentPage === settingsPageUrl) {
+    // Si on est sur une page des Préférences, extraire le thème
+    if (isSettingsPage(currentPage)) {
+        sessionStorage.removeItem('bw_themeWarningShown'); // Réinitialise l'avertissement pour la prochaine utilisation
         extractThemeFromPreferences();
     }
 })();
