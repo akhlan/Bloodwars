@@ -71,7 +71,7 @@
         },
         {
             question: "L’argent et le trafique d’armes c’est les facteurs, qui te permettront de survivre. Pour stabiliser ta situation développe La Maison Close jusqu’au niveau 8 et l’Arrêt Taxi jusqu’au niveau 2.",
-            reponse: "Pour la valider : Construire le niveau 10 ou supérieur de la Maison Close et du Marché Noir. Si l`un des deux est déjà construit, il suffit de construire l`autre. Si les deux sont déjà construits, il suffit de monter le niveau de l`un d`eux."
+            reponse: "Pour la valider : Construire le niveau 8 ou supérieur de la Maison Close et le niveau 2 ou supérieur de l’Arrêt Taxi. Si l`un des deux est déjà construit, il suffit de construire l`autre. Si les deux sont déjà construits, il suffit de monter le niveau de l`un d`eux."
         },
         {
             question: "Tu es né pour avancer. Prouve-le en joignant la IV zone.",
