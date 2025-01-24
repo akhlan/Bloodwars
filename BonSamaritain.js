@@ -2,7 +2,7 @@
 // @name         Déplacer la case à coher "Bon Samaritain"
 // @author       Pok Marvel
 // @namespace    https://r8.fr.bloodwars.net/*
-// @version      1.0
+// @version      1.1
 // @description  Déplace la case à cocherc "Bon Samaritain" sur la page des expéditions et des RdC de BloodWars, compatible avec Chrome et Firefox.
 // @copyright    24.01.2025, Pok Marvel
 // @license      GPL version 3 ou suivantes; http://www.gnu.org/copyleft/gpl.html
