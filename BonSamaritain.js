@@ -6,6 +6,8 @@
 // @description  Déplace la case à cocherc "Bon Samaritain" sur la page des expéditions et des RdC de BloodWars, compatible avec Chrome et Firefox.
 // @copyright    24.01.2025, Pok Marvel
 // @license      GPL version 3 ou suivantes; http://www.gnu.org/copyleft/gpl.html
+// @homepageURL  https://github.com/akhlan/Bloodwars/blob/main/BonSamaritain.js
+// @supportURL   https://github.com/Akhlan/BloodWarsAideMission/issues
 // @match        https://r8.fr.bloodwars.net/?a=cevent*
 // @match        https://r8.fr.bloodwars.net/?a=swr*
 // @match        https://r3.fr.bloodwars.net/?a=cevent*
