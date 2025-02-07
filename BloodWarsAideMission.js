@@ -2,7 +2,7 @@
 // @name         BloodWars - Explication des missions Moria S9
 // @author       Pok Marvel
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  Ajoute des réponses aux missions spécifiques sur les pages BloodWars (Moria S9, r8 et r3)
 // @copyright    06.12.2024, Pok Marvel
 // @license      GPL version 3 ou suivantes; http://www.gnu.org/copyleft/gpl.html
@@ -43,7 +43,7 @@
         },
         {
             question: "Le sang est la source de notre force. Bâtis 5 niveaux de La Boucherie sur ton quartier.",
-            reponse: "Pour la valider : Construire le niveau 3 ou supérieur de la Boucherie."
+            reponse: "Pour la valider : Construire le niveau 5 ou supérieur de la Boucherie."
         },
         {
             question: "Atteints le 10-ième niveau d’expérience.",
